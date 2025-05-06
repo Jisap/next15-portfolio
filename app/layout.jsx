@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${sometypeMono.variable} antialiased`}
+        className={`${sometypeMono.variable} antialiased overflow-hidden relative`}
       >
         <RectangleTransition />
         <PageTransition>
