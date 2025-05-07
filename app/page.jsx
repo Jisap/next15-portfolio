@@ -7,6 +7,7 @@ import avatarImg from '../public/assets/avatar.png'
 import { TypeAnimation } from 'react-type-animation'
 import { MdArrowOutward } from 'react-icons/md'
 import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
+import Socials from '@/components/Socials'
 
 
 const Home = () => {
@@ -45,14 +46,27 @@ const Home = () => {
             </div>
           </button>
 
-          <div>
+          <div className='flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0'>
             <div className='flex items-center gap-4 text-lg'>
               <span className='text-accent'>
                 <HiOutlinePhone className='text-xl' />
               </span>
               <span>+40 34 56 78 90</span>
             </div>
+
+            <div className='flex items-center gap-4 text-lg'>
+              <span className='text-accent'>
+                <HiOutlineMail className='text-xl' />
+              </span>
+              <span>jake@email.com</span>
+            </div>
           </div>
+
+          <Socials 
+            containerStyles='flex 2xl:flex-col gap-6 xl:hidden 2xl:flex 2xl:absolute 2xl:top-1/2 2xl:right-2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2'
+            iconStyles='bg-accent text-white hover:bg-accent-hover transition w-[48px] h-[48px] text-[22px] flex items-center justify-center rounded-full cursor-pointer'
+
+          />
         </div>
         
         <div className='hidden xl:block flex-1 relative z-20'>
