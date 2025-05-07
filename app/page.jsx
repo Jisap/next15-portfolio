@@ -2,6 +2,8 @@
 
 import Blob from '@/components/Blob'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import avatarImg from '../public/assets/avatar.png'
 
 const Home = () => {
   return (
@@ -16,7 +18,15 @@ const Home = () => {
       <div className='flex flex-col xl:flex-row items-center justify-between w-full'>
         <div className='w-full xl:w-[550px]'>text</div>
         <div className='hidden xl:block flex-1 relative z-20'>
-          <Blob containerStyles='w-full h-full' />
+          <Blob containerStyles='w-[560px] h-[560px]' />
+          <Image 
+            src={avatarImg}
+            alt="avatar"
+            width={440}
+            height={600}
+            quality={100}
+            className='absolute -top-16 left-[120px]'
+          />
         </div>
       </div>
     </motion.section>
