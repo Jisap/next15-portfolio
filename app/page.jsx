@@ -27,6 +27,7 @@ const Home = () => {
             quality={100}
             className='absolute -top-16 left-[120px]'
           />
+          <div className='w-full h-[164px] absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/20'></div>
         </div>
       </div>
     </motion.section>
