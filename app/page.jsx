@@ -8,6 +8,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { MdArrowOutward } from 'react-icons/md'
 import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 import Socials from '@/components/Socials'
+import Pattern from '@/components/Pattern'
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       }}
       className='h-screen flex items-center'
     >
+      <Pattern />
       <div className='flex flex-col xl:flex-row items-center justify-between w-full'>
         <div className='w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left'>
           <h1 className='h1 flex-1 mb-[28px]'>
