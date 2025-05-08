@@ -1,7 +1,7 @@
 
 import Logo from './Logo'
 import { CiMenuFries } from 'react-icons/ci'
-import { MdArrowOutward, MdFileDonwload } from 'react-icons/md'
+import { MdFileDownload } from "react-icons/md";
 import {
   Sheet,
   SheetContent,
@@ -11,6 +11,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import NavLinks from './NavLinks'
+import Socials from './Socials';
 
 
 const Header = () => {
@@ -32,12 +33,16 @@ const Header = () => {
               </SheetHeader>
               <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]"/>
               <div>
-                <button className='btn btn-lg btn-accent mb-16'>
+                <button className='btn btn-lg btn-tertiary mb-16'>
                   <div className='flex items-center gap-3'>
-                    <span>Let's talk</span>
-                    <MdArrowOutward className="text-xl" />
+                    <span>Download CV</span>
+                    <MdFileDownload className="text-xl" />
                   </div>
                 </button>
+                <Socials 
+                  containerStyles='flex gap-4' 
+                  iconStyles='bg-accent text-white hover:bg-accent-hover transition w-[40px] h-[40px] text-[20px] flex items-center justify-center rounded-full cursor-pointer'
+                />
               </div>
             </SheetContent>
           </Sheet>
