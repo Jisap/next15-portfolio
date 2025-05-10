@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ScrollArea } from "@/components/ui/scroll-area"
 import Image from 'next/image'
+import Stats from '@/components/Stats'
 
 
 const About = () => {
@@ -42,7 +43,7 @@ const About = () => {
               </p>
 
               <div className='flex flex-col items-start gap-16'>
-                <div>stats</div>
+                <Stats />
                 <div>testimonials</div>
                 <div>info</div>
                 <div>journey</div>
