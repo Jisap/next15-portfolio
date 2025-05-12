@@ -16,7 +16,7 @@ import Socials from './Socials';
 
 const Header = () => {
   return (
-    <heder className="2xl:hidden absolute z-40 left-0 top-0 right-0">
+    <header className="2xl:hidden absolute z-40 left-0 top-0 right-0">
       <div className='container mx-auto'>
         {/* logo */}
         <div className='flex items-center justify-between py-6'>
@@ -48,7 +48,7 @@ const Header = () => {
           </Sheet>
         </div>
       </div>
-    </heder>
+    </header>
   )
 }
 

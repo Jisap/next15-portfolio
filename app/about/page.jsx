@@ -5,6 +5,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import Image from 'next/image'
 import Stats from '@/components/Stats'
 import Testimonial from '@/components/Testimonial'
+import Info from '@/components/info'
 
 
 const About = () => {
@@ -46,7 +47,7 @@ const About = () => {
               <div className='flex flex-col items-start gap-16'>
                 <Stats />
                 <Testimonial />
-                <div>info</div>
+                <Info />
                 <div>journey</div>
                 <div>skills</div>
               </div>
