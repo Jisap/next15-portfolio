@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Stats from '@/components/Stats'
 import Testimonial from '@/components/Testimonial'
 import Info from '@/components/info'
+import Journey from '@/components/Journey'
 
 
 const About = () => {
@@ -48,7 +49,7 @@ const About = () => {
                 <Stats />
                 <Testimonial />
                 <Info />
-                <div>journey</div>
+                <Journey />
                 <div>skills</div>
               </div>
             </div>
