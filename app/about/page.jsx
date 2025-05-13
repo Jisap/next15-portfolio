@@ -7,6 +7,7 @@ import Stats from '@/components/Stats'
 import Testimonial from '@/components/Testimonial'
 import Info from '@/components/info'
 import Journey from '@/components/Journey'
+import Skills from '@/components/Skills'
 
 
 const About = () => {
@@ -50,7 +51,7 @@ const About = () => {
                 <Testimonial />
                 <Info />
                 <Journey />
-                <div>skills</div>
+                <Skills />
               </div>
             </div>
           </ScrollArea>

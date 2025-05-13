@@ -1,7 +1,7 @@
 "use client"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper'
+import { Autoplay } from 'swiper/modules'
 import "swiper/css"
 import "swiper/css/pagination"
 import { ImQuotesLeft } from "react-icons/im"
@@ -25,7 +25,7 @@ const testimonial = [
 const Testimonial = () => {
   return (
     <Swiper 
-      modules={{ Autoplay }} 
+      modules={[ Autoplay ]} 
       loop={true}
       autoplay={{ delay: 4000, disableOnInteraction: false }} 
       className='w-full max-w-[310px] md:max-w-[520px] bg-secondary rounded-lg'
