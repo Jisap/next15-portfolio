@@ -8,6 +8,8 @@ import Testimonial from '@/components/Testimonial'
 import Info from '@/components/info'
 import Journey from '@/components/Journey'
 import Skills from '@/components/Skills'
+import Blob from '@/components/Blob'
+import Socials from '@/components/Socials'
 
 
 const About = () => {
@@ -23,8 +25,28 @@ const About = () => {
       <div className='container mx-auto px-0'>
         <div className='flex flex-col xl:flex-row items-center gap-24 w-full h-[680px]'>
           {/* img & social icons */}
-          <div className='hidden xl:flex w-full h-full pt-14 max-w-[430px] relative bg-pink-50/10'>
-            1
+          <div className='hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative'>
+            <Image 
+              src="/assets/avatar.png"
+              alt="Jake Doe"
+              width={320}
+              height={496}
+              className='z-20 relative'
+            />
+
+            {/* overlay */}
+            <div className='w-full h-[60px] absolute left-0 top-[420px] right-0 bg-gradient-to-t from-primary via-primary z-30'></div>
+            
+            {/* blob */}
+            <div className='absolute top-[80px] -left-[80px] z-10'>
+              <Blob containerStyles="w-[420px] h-[420px]"/>
+            </div>
+
+            {/* socials */}
+            <Socials 
+              containerStyles="flex gap-4 z-40 w-max transform translate-x-[30px]"
+              iconStyles="w-[48px] h-[48px] text-[22px] text-accent hover:text-accent-hover transition-all flex items-center justify-center rounded-full cursor-pointer"
+            />
           </div>
 
           {/* scroll area */}
