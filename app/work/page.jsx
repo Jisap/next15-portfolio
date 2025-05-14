@@ -134,13 +134,33 @@ const Work = () => {
                 <TabsTrigger 
                   key={category} 
                   value={category}
-                  className="capitalize border border-white/10 data-[state=active]:bg-accent data-[state=active]:border-accent h-[48px] px-6 rounded-full"  
+                  className="capitalize border border-white/10 data-[state=active]:bg-accent data-[state=active]:border-accent h-[48px] px-6 rounded-full cursor-pointer"  
                 >
-                  {category}
+                  {category === "uiux" ? "UI UX Design" : category}
                 </TabsTrigger>
               )
             })}
           </TabsList>
+
+          <div>
+            {categories.map((category) => {
+              return(
+                <TabsContent key={category} value={category}>
+                  <Swiper>
+                    {projects.filter(
+                      (project) => project.category === category
+                    ).map((project) => {
+                      return (
+                        <SwiperSlide>
+                          {project.title}
+                        </SwiperSlide>
+                      )
+                    })}
+                  </Swiper>
+                </TabsContent>
+              )
+            })}
+          </div>
         </Tabs>
       </div>
     </motion.div>
