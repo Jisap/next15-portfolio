@@ -103,7 +103,9 @@ const projects = [
     github: "",
     tech: ["Illustrator", "Figma", "Notion"]
   },
-]
+];
+
+const categories = [ "frontend", "fullstack", "uiux", "branding" ]
 
 
 
@@ -115,8 +117,32 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
+      className='min-h-screen flex items-center py-24 xl:py-0'
     >
-      Work
+      <div className='container mx-auto w-full h-full flex flex-col justify-center'>
+        <h2 className='h2 mb-6 xl:mb-12 max-w-[600px]'>
+          My Latest <span className='text-accent'>Work</span>
+        </h2>
+
+        <Tabs 
+          defaultValue='frontend'
+          className="w-full flex flex-col gap-6 xl:gap-12"  
+        >
+          <TabsList className="flex flex-wrap justify-center items-center gap-4 h-full mb-4 xl:mb-0">
+            {categories.map((category) => {
+              return(
+                <TabsTrigger 
+                  key={category} 
+                  value={category}
+                  className="capitalize border border-white/10 data-[state=active]:bg-accent data-[state=active]:border-accent h-[48px] px-6 rounded-full"  
+                >
+                  {category}
+                </TabsTrigger>
+              )
+            })}
+          </TabsList>
+        </Tabs>
+      </div>
     </motion.div>
   )
 }
