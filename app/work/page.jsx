@@ -142,7 +142,7 @@ const Work = () => {
             })}
           </TabsList>
 
-          <div>
+          <div className="">
             {categories.map((category) => {
               return (
                 <TabsContent key={category} value={category}>
@@ -172,6 +172,25 @@ const Work = () => {
                                     )
                                   })}
                                 </ul>
+                              </div>
+
+                              <div className='flex flex-col sm:flex-row gap-4 items-start'>
+                                <Link href={project.link}>
+                                  <button className='btn btn-sm btn-accent flex gap-2'>
+                                    <MdArrowOutward className='text-xl' />
+                                    <span>
+                                      Live Project
+                                    </span>
+                                  </button>
+                                </Link>
+                                <Link href={project.github}>
+                                  <button className='btn btn-sm btn-white flex gap-2'>
+                                    <FaGithub className='text-xl' />
+                                    <span>
+                                      Github Repo
+                                    </span>
+                                  </button>
+                                </Link>
                               </div>
                             </div>
 
