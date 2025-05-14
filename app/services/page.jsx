@@ -67,6 +67,9 @@ const Services = () => {
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
+          modules={[Pagination]}
+          pagination={{clickable: true, dynamicBullets: true}}
+          className="h-[320px]"
         >
           {services.map((item, index) => {
             return (
