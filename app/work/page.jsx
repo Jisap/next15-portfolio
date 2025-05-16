@@ -142,7 +142,7 @@ const Work = () => {
             })}
           </TabsList>
 
-          <div className="">
+          <div className="h-[400px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
             {categories.map((category) => {
               return (
                 <TabsContent key={category} value={category}>
