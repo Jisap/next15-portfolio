@@ -146,7 +146,11 @@ const Work = () => {
             {categories.map((category) => {
               return (
                 <TabsContent key={category} value={category}>
-                  <Swiper>
+                  <Swiper 
+                    modules={[Pagination]}
+                    pagination={{clickable: true, dynamicBullets: true}} 
+                    className='h-max xl:h-[460px]' 
+                  >
                     {projects.filter(
                       (project) => project.category === category
                     ).map((project) => {
