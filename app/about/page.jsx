@@ -5,11 +5,13 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import Image from 'next/image'
 import Stats from '@/components/Stats'
 import Testimonial from '@/components/Testimonial'
-import Info from '@/components/info'
+
 import Journey from '@/components/Journey'
 import Skills from '@/components/Skills'
 import Blob from '@/components/Blob'
 import Socials from '@/components/Socials'
+import Info from '@/components/Info'
+
 
 
 const About = () => {
