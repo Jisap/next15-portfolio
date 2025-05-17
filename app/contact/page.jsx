@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="w-full">
           <div className="flex flex-col xl:flex-row gap-6">
             {/* info text */}
-            <div>info text</div>
+            <div className="flex-1 xl:w-[600px] flex flex-col gap-12">info text</div>
             {/* form */}
             <div className="flex-1">
               <form className="flex flex-col gap-6 items-start">
@@ -95,6 +95,26 @@ const Contact = () => {
                     </SelectContent>
                   </Select>
                 </div>
+
+                <div className="w-full">
+                  <Label htmlFor="name">
+                    Message <span className="text-accent">*</span>
+                  </Label>
+
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message..."
+                    className="min-h-[160px] bg-white/5 border-white/10 focus-viible:border-accent focus-visible:ring-accent focus-visible:ring-[1px] resize-none p-4 selection:bg-accent placeholder:text-white/50"
+                  />
+                </div>
+
+                <button className="btn btn-lg btn-accent">
+                  <div className="flex items-center gap-3">
+                    <span className="font-medium">Send Message</span>
+                    <HiOutlineArrowLongRight className="text-xl" />
+                  </div>
+                </button>
               </form>
             </div>
           </div>
