@@ -18,7 +18,7 @@ import {
 import {
   HiOutlinePhone,
   HiOutlineMail,
-} from "react-icons"
+} from "react-icons/hi"
 
 
 
@@ -38,7 +38,37 @@ const Contact = () => {
         <div className="w-full">
           <div className="flex flex-col xl:flex-row gap-6">
             {/* info text */}
-            <div className="flex-1 xl:w-[600px] flex flex-col gap-12">info text</div>
+            <div className="flex-1 xl:w-[600px] flex flex-col gap-12">
+              <div>
+                <h2 className="h2 mb-6">Get In <span className="text-accent">Touch</span></h2>
+                <p className="max-w-[460px]">
+                  lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-8 mb-6 xl:mb-0">
+                <div className="flex items-center gap-4 text-lg">
+                  <span className="text-accent">
+                    <HiOutlinePhone className="text-2xl"/>
+                  </span>
+                  <spam>+11 22 33 44 55</spam>
+                </div>
+                <div className="flex items-center gap-4 text-lg">
+                  <span className="text-accent">
+                    <HiOutlineMail className="text-2xl"/>
+                  </span>
+                  <spam>jake@gmail.com</spam>
+                </div>
+                <div className="flex items-center gap-4 text-lg">
+                  <span className="text-accent">
+                    <HiOutlineMapPin className="text-2xl"/>
+                  </span>
+                  <spam>255 Street, New York, USA</spam>
+                </div>
+
+              </div>
+            </div>
+
             {/* form */}
             <div className="flex-1">
               <form className="flex flex-col gap-6 items-start">
